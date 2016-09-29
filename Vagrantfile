@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "off"]
   end
 
-  config.vm.box_url = "https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.1.0/centos-7.0-x86_64.box"
+  config.vm.box_url = "https://github.com/2creatives/vagrant-centos/releases/download/v6.5.3/centos65-x86_64-20140116.box"
   config.vm.box = "ANSIBLE_TEST"
   config.vm.hostname = "ANSIBLETEST"
   config.vm.network :private_network, ip: "192.168.56.13"
